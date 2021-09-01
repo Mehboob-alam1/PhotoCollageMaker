@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n2="http://schemas.android.com/apk/res/android"
+    n2:id="@+id/font_fragment_layout"
+    n2:layout_width="match_parent"
+    n2:layout_height="match_parent"
+    n2:background="@color/bg"
+    n2:orientation="vertical">
+
+    <LinearLayout
+        n2:layout_width="match_parent"
+        n2:layout_height="wrap_content"
+        n2:background="@color/app_background"
+        n2:orientation="horizontal">
+
+        <Button
+            n2:id="@+id/button_text_color"
+            style="@style/canvas_text_toolbar_button_style"
+            n2:layout_width="wrap_content"
+            n2:layout_height="wrap_content"
+            n2:layout_weight="1.0"
+            n2:gravity="center"
+            n2:text="@string/canvas_text_color"
+            n2:textColor="@color/text_color"
+            n2:background="@color/app_foreground"
+            n2:layout_marginRight="3dp"/>
+
+        <Button
+            n2:id="@+id/button_font_ok"
+            style="@style/canvas_text_toolbar_button_style"
+            n2:layout_width="wrap_content"
+            n2:layout_height="wrap_content"
+            n2:layout_weight="1.0"
+            n2:gravity="center"
+            n2:layout_marginLeft="3dp"
+            n2:text="@android:string/ok"
+            n2:textColor="@color/text_color"
+            n2:background="@color/app_foreground"/>
+    </LinearLayout>
+
+    <TextView
+        n2:id="@+id/textview_font"
+        n2:layout_width="match_parent"
+        n2:layout_height="@dimen/preview_text_view_height"
+        n2:background="#ff333333"
+        n2:clickable="true"
+        n2:gravity="center"
+        n2:lines="1"
+        n2:padding="5.0dip"
+        n2:text="@string/preview_text"
+        n2:textColor="#ffffffff"
+        n2:textSize="@dimen/preview_text_size" />
+
+    <EditText
+        n2:id="@+id/edittext_font"
+        n2:layout_width="match_parent"
+        n2:layout_height="wrap_content"
+        n2:ems="1"
+        n2:gravity="center"
+        n2:hint="@string/canvas_text_hint"
+        n2:imeOptions="actionDone"
+        n2:inputType="textNoSuggestions"
+        n2:padding="@dimen/edittext_padding"
+        n2:singleLine="true"
+        n2:textColor="@color/white"
+        n2:textColorHint="@color/white"/>
+
+    <GridView
+        n2:id="@+id/gridview_font"
+        n2:layout_width="match_parent"
+        n2:layout_height="wrap_content"
+        n2:layout_marginTop="@dimen/_5sdp"
+        n2:cacheColorHint="#00000000"
+        n2:numColumns="4" />
+</LinearLayout>

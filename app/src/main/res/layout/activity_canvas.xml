@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@+id/canvas_relative_layout"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="#00592626"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@+id/text_footer"
+        n1:layout_width="fill_parent"
+        n1:layout_height="56dp"
+        n1:layout_alignParentBottom="true">
+
+        <TextView
+            n1:gravity="center"
+            n1:id="@+id/button_cancel_action"
+            n1:layout_height="fill_parent"
+            n1:text="@android:string/cancel"
+            n1:background="@color/app_foreground"
+            n1:textColor="@color/text_color"
+            style="@style/canvas_text_toolbar_button_style" />
+
+        <TextView
+            n1:gravity="center"
+            n1:id="@+id/button_apply_action"
+            n1:layout_height="fill_parent"
+            n1:text="@android:string/ok"
+            n1:textColor="@color/white"
+            n1:background="@color/app_foreground"
+            style="@style/canvas_text_toolbar_button_style" />
+    </LinearLayout>
+</RelativeLayout>

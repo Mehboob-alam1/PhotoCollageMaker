@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n2="http://schemas.android.com/apk/res/android"
+    n2:layout_width="match_parent"
+    n2:layout_height="match_parent"
+    n2:background="@drawable/original_back"
+    n2:clickable="true">
+
+    <ImageView
+        n2:id="@+id/imageView1"
+        n2:layout_width="match_parent"
+        n2:layout_height="match_parent"
+        n2:layout_above="@+id/button_dummy"
+        n2:layout_below="@+id/full_fragment_apply_filter_header"
+        n2:layout_centerHorizontal="true"
+        n2:adjustViewBounds="true"
+        n2:scaleType="fitCenter" />
+
+    <!--<LinearLayout
+        n2:layout_width="match_parent"
+        n2:layout_height="@dimen/_40sdp"
+        n2:layout_alignParentTop="true"
+        n2:background="@color/primary" />-->
+
+    <LinearLayout
+        n2:id="@+id/full_fragment_apply_filter_header"
+        n2:layout_width="match_parent"
+        n2:layout_height="@dimen/_40sdp"
+        n2:layout_alignParentTop="true"
+        n2:background="@color/app_background"
+        n2:gravity="center_vertical"
+        n2:orientation="horizontal"
+        n2:visibility="visible">
+
+        <TextView
+            n2:id="@+id/button_cancel_filter"
+            style="@style/effect_header_button_style"
+            n2:background="@color/app_foreground"
+            n2:clickable="true"
+            n2:gravity="center"
+            n2:textColor="@color/text_color"
+            n2:layout_marginRight="3dp"
+            n2:text="@android:string/cancel" />
+
+        <TextView
+            n2:id="@+id/button_apply_filter"
+            style="@style/effect_header_button_style"
+            n2:background="@color/app_foreground"
+            n2:clickable="true"
+            n2:gravity="center"
+            n2:textColor="@color/text_color"
+            n2:layout_marginLeft="3dp"
+            n2:text="@android:string/ok" />
+    </LinearLayout>
+
+    <FrameLayout
+        n2:id="@+id/fragment_container"
+        n2:layout_width="match_parent"
+        n2:layout_height="wrap_content"
+        n2:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        n2:id="@+id/button_dummy"
+        n2:layout_width="wrap_content"
+        n2:layout_height="wrap_content"
+        n2:layout_alignParentBottom="true"
+        n2:orientation="horizontal"
+        n2:visibility="invisible">
+
+        <Button
+            style="@style/effect_footer_imagebutton_style"
+            n2:drawableTop="@drawable/lib_effect"
+            n2:text="Fx" />
+    </LinearLayout>
+</RelativeLayout>

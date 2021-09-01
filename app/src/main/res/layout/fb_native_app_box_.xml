@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_choices_container"
+            android:layout_width="wrap_content"
+            android:layout_height="148.0dip"
+            android:gravity="right"
+            android:orientation="horizontal" />
+
+        <com.facebook.ads.MediaView
+            android:id="@+id/fb_native_ad_mediaview"
+            android:layout_width="fill_parent"
+            android:layout_height="148.0dip"
+            android:gravity="top" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/fb_native_ad_icon"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="top"
+            android:fitsSystemWindows="true" />
+
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fb_native_ad_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@android:color/black"
+                android:textSize="16.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip" />
+
+            <TextView
+                android:id="@+id/fb_native_ad_body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minLines="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fb_native_ad_call_to_action"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:background="@drawable/native_ads_btn"
+        android:textColor="@android:color/white"
+        android:textSize="12.0dip" />
+</LinearLayout>

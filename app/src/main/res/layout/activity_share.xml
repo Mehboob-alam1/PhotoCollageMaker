@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/original_back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_foreground"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_left_arrow_back"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/share"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:text="Share Creation"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ads_container"
+        android:layout_below="@+id/top"
+        android:layout_centerInParent="true">
+
+        <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="vertical">-->
+
+
+        <LinearLayout
+            android:id="@+id/c_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5.0dip"
+                app:cardBackgroundColor="@color/app_foreground"
+                app:cardCornerRadius="10.0dip"
+                app:cardElevation="11dp"
+                app:cardUseCompatPadding="true">
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent">-->
+
+                <ImageView
+                    android:id="@+id/ivFinalImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5.0dip"
+                    android:scaleType="fitCenter" />
+
+                <!--</FrameLayout>-->
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <!--</LinearLayout>-->
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/share_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_above="@id/ads_container">
+
+        <LinearLayout
+            android:id="@+id/llWhatsApp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_whatsapp"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:src="@drawable/new_btn_wtsp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="WhatsApp"
+
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llInstagram"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_instagram"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:layout_weight="1.0"
+                android:src="@drawable/new_btn_inst" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Instagram"
+                android:textColor="@android:color/white"
+
+                android:textSize="10dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFacebook"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:layout_weight="1.0"
+                android:src="@drawable/new_btn_fb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Facebook"
+                android:textColor="@android:color/white"
+
+                android:textSize="10dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMore"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_Share_More"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:layout_weight="1.0"
+                android:src="@drawable/new_btn_share" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Other"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ads_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/fb_banner_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

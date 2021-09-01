@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_gravity="center_horizontal"
+    n1:orientation="vertical"
+    n1:background="@color/primary"
+    n1:padding="@dimen/_5sdp"
+    n1:clickable="true"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    n1:onClick="myClickHandler"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        n1:id="@+id/filter_image"
+        n1:background="#00000000"
+        n1:layout_width="50.0dip"
+        n1:layout_height="50.0dip"
+        n1:scaleType="fitXY"
+        n1:layout_alignParentTop="true" />
+</RelativeLayout>

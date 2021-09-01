@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Collage Maker</string>
+
+    <string name="app_description">Photo Collage is the Light-Weight editor For Android.</string>
+
+
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_native">ca-app-pub-3940256099942544/2247696110</string>
+
+    <!--//Change Your FaceBook Audience Network Ads ID Here-->
+    <string name="fb_interstitial">415152242531057_4202129286916</string>
+    <string name="fb_exit_native_id">415152242531057_5095562497322</string>
+    <string name="fb_banner">415152242531057_4202119786750</string>
+
+
+
+    <string name="drawer_title_privacy">Privacy Policy</string>
+    <string name="drawer_title_ratting">Rate Us</string>
+    <string name="drawer_title_share_friend">Share App</string>
+    <string name="canvas_text_color">Color</string>
+    <string name="canvas_text_enter_text">Please enter text</string>
+    <string name="canvas_text_hint">Enter Text</string>
+    <string name="collage_lib_delete_message">Do you want to delete image?</string>
+    <string name="directory">/PhotoCollageMaker/</string>
+    <string name="effect_parameter_bundle_name">global_parameter</string>
+    <string name="error_img_not_found">Oops! please try again.</string>
+    <string name="gallery_lib_max">Max %d</string>
+    <string name="gallery_no_more">No More item %d</string>
+    <string name="gallery_select_an_album">Select Album</string>
+    <string name="gallery_select_one">Select at least %d image</string>
+    <string name="loading_image">Loading image</string>
+    <string name="preview_text">Enter Text</string>
+    <string name="txt_press_again_to_exit">Press again to exit</string>
+    <string name="dialog_rate_content">We’re a tiny team working extremely hard to give you the best apps for free. Your 5-Stars are better than anything in the world!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="feedback_message">If you like Collage Maker Photo Editor then please leave a review on Play Store. It would motivate us to improve the app and provide your even better services than before.</string>
+    <string name="privacy_policy_url">https://hdxvideoplayer.blogspot.com/2020/07/imcollage-privacy-policy.html</string>
+    <string name="share_message">Hi. I am using an awesome Photo Editor and Photo Collage "ImCollage" for Android. https://play.google.com/store/apps/details?id=%s</string>
+
+
+</resources>

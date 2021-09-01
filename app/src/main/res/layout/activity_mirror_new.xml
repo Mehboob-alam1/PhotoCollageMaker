@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n2="http://schemas.android.com/apk/res/android"
+    n2:layout_width="match_parent"
+    n2:layout_height="match_parent"
+    n2:background="@color/app_background">
+
+    <RelativeLayout
+        n2:id="@+id/layout_mirror_activity"
+        n2:layout_width="match_parent"
+        n2:layout_height="match_parent"
+        n2:layout_above="@id/banner_container">
+
+        <RelativeLayout
+            n2:id="@+id/text_view_fragment_container"
+            n2:layout_width="match_parent"
+            n2:layout_height="match_parent"
+            n2:orientation="horizontal" />
+
+        <LinearLayout
+            n2:id="@+id/mirror_header"
+            n2:layout_width="match_parent"
+            n2:layout_height="wrap_content"
+            n2:orientation="vertical">
+
+            <LinearLayout
+                n2:layout_width="match_parent"
+                n2:layout_height="56dp"
+                n2:orientation="horizontal">
+
+                <ImageButton
+                    n2:id="@+id/closeScreen"
+                    n2:layout_width="wrap_content"
+                    n2:layout_height="match_parent"
+                    n2:background="@color/app_foreground"
+                    n2:onClick="myClickHandler"
+                    n2:paddingLeft="16dp"
+                    n2:paddingRight="16dp"
+                    n2:src="@drawable/ic_close_black_24dp"
+                    n2:tint="@color/white"/>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    n2:layout_width="wrap_content"
+                    n2:layout_height="match_parent"
+                    n2:layout_gravity="center"
+                    n2:layout_weight="1"
+                    n2:fontFamily="cursive"
+                    n2:gravity="center"
+                    n2:padding="3dp"
+                    n2:textColor="@color/white"
+                    n2:background="@color/app_foreground"
+                    n2:text="@string/app_name" />
+
+                <ImageButton
+                    n2:id="@+id/button_save_mirror_image"
+                    n2:layout_width="wrap_content"
+                    n2:layout_height="match_parent"
+                    n2:layout_gravity="bottom|center"
+                    n2:background="@color/app_foreground"
+                    n2:onClick="myClickHandler"
+                    n2:padding="16dp"
+                    n2:tint="@color/white"
+                    n2:src="@drawable/ic_save_black_24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <com.helloworld.photoeditor.utils.MyViewFlipper
+            n2:id="@+id/mirror_view_flipper"
+            n2:layout_width="match_parent"
+            n2:layout_height="wrap_content"
+            n2:layout_above="@+id/mirror_footer"
+            n2:gravity="bottom">
+
+            <LinearLayout
+                n2:id="@+id/mirror_combinations"
+                n2:layout_width="match_parent"
+                n2:layout_height="wrap_content"
+                n2:layout_alignParentLeft="true"
+                n2:layout_gravity="bottom"
+                n2:background="@color/collage_tool_background_color"
+                n2:orientation="horizontal"
+                n2:padding="3.0dip"
+                n2:paddingRight="10.0dip">
+
+                <HorizontalScrollView
+                    n2:id="@+id/horizontalScrollView2"
+                    n2:layout_width="match_parent"
+                    n2:layout_height="wrap_content"
+                    n2:background="@color/collage_tool_background_color"
+                    n2:padding="1.0dip"
+                    n2:paddingRight="0.0dip">
+
+                    <LinearLayout
+                        n2:layout_width="wrap_content"
+                        n2:layout_height="wrap_content"
+                        n2:orientation="horizontal"
+                        n2:padding="1.0dip">
+
+                        <ImageView
+                            n2:id="@+id/button_m1"
+                            style="@style/mirror_button_style"
+                            n2:background="@color/app_background"
+                            n2:src="@drawable/m1" />
+
+                        <ImageView
+                            n2:id="@+id/button_m2"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m2" />
+
+                        <ImageView
+                            n2:id="@+id/button_m3"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m3" />
+
+                        <ImageView
+                            n2:id="@+id/button_m4"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m4" />
+
+                        <ImageView
+                            n2:id="@+id/button_m5"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m5" />
+
+                        <ImageView
+                            n2:id="@+id/button_m6"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m6" />
+
+                        <ImageView
+                            n2:id="@+id/button_m7"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m7" />
+
+                        <ImageView
+                            n2:id="@+id/button_m8"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m8" />
+
+                        <ImageView
+                            n2:id="@+id/button_m9"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m9" />
+
+                        <ImageView
+                            n2:id="@+id/button_m10"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m10" />
+
+                        <ImageView
+                            n2:id="@+id/button_m11"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m11" />
+
+                        <ImageView
+                            n2:id="@+id/button_m12"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m12" />
+
+                        <ImageView
+                            n2:id="@+id/button_m13"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m13" />
+
+                        <ImageView
+                            n2:id="@+id/button_m14"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m14" />
+
+                        <ImageView
+                            n2:id="@+id/button_m15"
+                            style="@style/mirror_button_style"
+                            n2:src="@drawable/m15" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                n2:id="@+id/horizontalScrollView3"
+                n2:layout_width="match_parent"
+                n2:layout_height="wrap_content"
+                n2:layout_gravity="bottom"
+                n2:background="@color/collage_tool_background_color"
+                n2:padding="3dp"
+                n2:paddingRight="0dp">
+
+                <LinearLayout
+                    n2:layout_width="wrap_content"
+                    n2:layout_height="wrap_content"
+                    n2:orientation="horizontal"
+                    n2:padding="1.0dip">
+
+                    <ImageView
+                        n2:id="@+id/button_3d_1"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/half_heart_left" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_2"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/half_heart_right" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_3"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/shield_left" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_4"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/shield_right" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_5"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/spades_left" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_6"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/spades_right" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_7"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_4_icon_left" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_8"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_4_icon" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_9"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_3_icon_left" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_10"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_3_icon_right" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_11"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_1_icon_left" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_12"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_1_icon" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_13"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_6_icon" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_14"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_6_icon_left" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_15"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_13_icon" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_16"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_13_icon_right" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_17"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_15_icon4" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_18"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_15_icon2" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_19"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_15_icon3" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_20"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_15_icon" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_21"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_16_icon4" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_22"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_16_icon2" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_23"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_16_icon3" />
+
+                    <ImageView
+                        n2:id="@+id/button_3d_24"
+                        style="@style/mirror_button_style"
+                        n2:src="@drawable/mirror_3d_16_icon" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                n2:id="@+id/mirror_ratios"
+                n2:layout_width="match_parent"
+                n2:layout_height="wrap_content"
+                n2:layout_alignParentLeft="true"
+                n2:layout_alignParentBottom="true"
+                n2:layout_gravity="bottom"
+                n2:background="@color/collage_tool_background_color"
+                n2:orientation="horizontal"
+                n2:padding="3.0dip"
+                n2:paddingRight="5.0dip">
+
+                <HorizontalScrollView
+                    n2:id="@+id/mirror_ratio_horizontalScrollView"
+                    n2:layout_width="match_parent"
+                    n2:layout_height="wrap_content"
+                    n2:layout_marginLeft="2.0dip"
+                    n2:background="@color/collage_tool_background_color"
+                    n2:padding="3.0dip"
+                    n2:paddingRight="0.0dip">
+
+                    <LinearLayout
+                        n2:layout_width="wrap_content"
+                        n2:layout_height="wrap_content"
+                        n2:orientation="horizontal"
+                        n2:padding="1.0dip">
+
+                        <Button
+                            n2:id="@+id/button11"
+                            style="@style/collage_ratio_button_style"
+                            n2:background="@drawable/selector_collage_ratio_button"
+                            n2:text="1:1" />
+
+                        <Button
+                            n2:id="@+id/button21"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="2:1" />
+
+                        <Button
+                            n2:id="@+id/button12"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="1:2" />
+
+                        <Button
+                            n2:id="@+id/button32"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="3:2" />
+
+                        <Button
+                            n2:id="@+id/button23"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="2:3" />
+
+                        <Button
+                            n2:id="@+id/button43"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="4:3" />
+
+                        <Button
+                            n2:id="@+id/button34"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="3:4" />
+
+                        <Button
+                            n2:id="@+id/button45"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="4:5" />
+
+                        <Button
+                            n2:id="@+id/button57"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="5:7" />
+
+                        <Button
+                            n2:id="@+id/button169"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="16:9" />
+
+                        <Button
+                            n2:id="@+id/button916"
+                            style="@style/collage_ratio_button_style"
+                            n2:text="9:16" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <FrameLayout
+                n2:id="@+id/mirror_effect_fragment_container"
+                n2:layout_width="match_parent"
+                n2:layout_height="wrap_content"
+                n2:layout_above="@+id/mirror_footer" />
+
+            <View
+                n2:layout_width="1.0dip"
+                n2:layout_height="1.0dip" />
+        </com.helloworld.photoeditor.utils.MyViewFlipper>
+
+        <LinearLayout
+            n2:id="@+id/mirror_footer"
+            n2:layout_width="match_parent"
+            n2:layout_height="wrap_content"
+            n2:layout_alignParentBottom="true"
+            n2:orientation="horizontal">
+
+            <Button
+                n2:id="@+id/button_mirror"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/m0"
+                n2:text="Mirror"
+                n2:textColor="@color/text_color"
+                />
+
+            <Button
+                n2:id="@+id/button_mirror_3d"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/ic_3d_movie"
+                n2:text="Shape"
+                n2:drawableTint="@color/text_color"
+                n2:textColor="@color/text_color"/>
+
+            <Button
+                n2:id="@+id/button_mirror_ratio"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/ic_ratio"
+                n2:text="Ratio"
+                n2:drawableTint="@color/text_color"
+                n2:textColor="@color/text_color"/>
+
+            <Button
+                n2:id="@+id/button_mirror_effect"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/ic_magic_wand"
+                n2:text="Effect"
+                n2:visibility="gone"
+                n2:drawableTint="@color/text_color"
+                n2:textColor="@color/text_color"/>
+
+            <Button
+                n2:id="@+id/button_mirror_frame"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/ic_frame"
+                n2:text="Frame"
+                n2:visibility="gone"
+                n2:drawableTint="@color/text_color"
+                n2:textColor="@color/text_color" />
+
+            <Button
+                n2:id="@+id/button_mirror_text"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/ic_font"
+                n2:text="Text"
+                n2:drawableTint="@color/text_color"
+                n2:textColor="@color/text_color"/>
+
+            <Button
+                n2:id="@+id/button_mirror_sticker"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/ic_sticker"
+                n2:text="Sticker"
+                n2:visibility="gone"
+                n2:drawableTint="@color/text_color"
+                n2:textColor="@color/text_color"/>
+
+            <Button
+                n2:id="@+id/button_mirror_adj"
+                style="@style/mirror_footer_imagebutton_style"
+                n2:drawableTop="@drawable/ic_levels"
+                n2:text="Filter"
+                n2:visibility="visible"
+                n2:drawableTint="@color/text_color"
+                n2:textColor="@color/text_color"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        n2:id="@+id/banner_container"
+        n2:layout_width="wrap_content"
+        n2:layout_height="wrap_content"
+        n2:orientation="horizontal"
+        n2:layout_centerHorizontal="true"
+        n2:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme_NoActionBar" parent="@style/AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">Ad</item>
+        <item name="android:background">#FFCC66</item>
+        <item name="android:width">15dp</item>
+        <item name="android:height">15dp</item>
+    </style>
+
+
+    <style name="canvas_text_toolbar_button_style">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/collage_footer_button</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="collage_footer_imagebutton_style">
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:background">@drawable/collage_footer_button</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">@dimen/_50sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">myClickHandler</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="collage_footer_context_imagebutton_style">
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:background">@drawable/collage_footer_button_context</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minWidth">@dimen/collage_context_button_style_min_width</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">myClickHandler</item>
+    </style>
+
+    <style name="mirror_footer_imagebutton_style">
+        <item name="android:textSize">@dimen/text_size_very_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:background">@drawable/collage_footer_button</item>
+        <item name="android:paddingTop">@dimen/padding_extra_normal</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">myClickHandler</item>
+    </style>
+
+    <style name="gallery_tool_text_style">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="effect_header_button_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">myClickHandler</item>
+    </style>
+
+    <style name="effect_footer_imagebutton_style">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/collage_footer_button</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/collage_context_button_style_min_width</item>
+        <item name="android:minHeight">@dimen/collage_context_button_style_min_width</item>
+        <item name="android:drawablePadding">@dimen/padding_small</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">myClickHandler</item>
+    </style>
+
+    <style name="PickerEditText">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="collage_ratio_button_style">
+        <item name="android:textSize">@dimen/collage_ratio_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_collage_ratio_button</item>
+        <item name="android:padding">12.0dip</item>
+        <item name="android:layout_width">@dimen/collage_ratio_button_width</item>
+        <item name="android:layout_height">@dimen/collage_ratio_button_height</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">myClickHandler</item>
+    </style>
+
+    <style name="mirror_button_style">
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:layout_width">50.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:onClick">myClickHandler</item>
+    </style>
+
+    <style name="effect_seek_bar_style">
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:paddingRight">18.0dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">12.0dip</item>
+        <item name="android:progress">50</item>
+        <item name="android:minHeight">12.0dip</item>
+    </style>
+
+    <declare-styleable name="AppCompatTheme_windowActionBarOverlay"></declare-styleable>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="HomeCardStyle">
+        <item name="contentPadding">6dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+</resources>

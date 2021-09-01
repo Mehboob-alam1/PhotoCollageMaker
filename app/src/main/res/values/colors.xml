@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#292626</color>
+    <color name="primary_dark">#000000</color>
+    <color name="accent">#ff1ea0d7</color>
+
+    <color name="app_background">#00BCD4</color>
+    <color name="app_foreground">#2196F3</color>
+    <color name="text_color">#ffffff</color>
+
+
+
+    <color name="bg">#ff58554e</color>
+    <color name="black">#000000</color>
+    <color name="blue">#ff1ea0d7</color>
+    <color name="collage_tool_background_color">#ff535353</color>
+    <!--<color name="footer_button_color_pressed">#ff1ea0d7</color>-->
+    <color name="footer_button_color_pressed">#FFB300</color>
+    <color name="gallery_ok_button_normal">#FFB300</color>
+    <color name="gallery_ok_button_pressed">#FDD835</color>
+M
+    <color name="red">#ff1ea0d7</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="view_flipper_bg_color">#ff535353</color>
+    <color name="white">#ffffffff</color>
+    <color name="yellow">#f2c748</color>
+    <color name="rate_confirm_text_color">#22ac38</color>
+
+
+
+    <color name="card_blue">#45A7DB</color>
+    <color name="card_orange">#F37F25</color>
+    <color name="card_mehndi">#827717</color>
+    <color name="card_green">#FC08B102</color>
+    <color name="card_dark_blue">#006064</color>
+    <color name="card_red">#BF360C</color>
+    <color name="fg">#F44336</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+</resources>

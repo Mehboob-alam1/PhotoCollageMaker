@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"
+            android:visible="false"
+            />
+
+
+
+        <!--<item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favourites" />-->
+
+        <!--<item
+            android:id="@+id/nav_settings"
+            android:checkable="false"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />-->
+
+        <item
+            android:id="@+id/nav_about"
+            android:checkable="false"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About"
+            android:visible="false"/>
+
+
+    </group>
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:checkable="false"
+        android:icon="@drawable/ic_tooltip_edit"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/nav_privacy"
+        android:checkable="false"
+        android:icon="@drawable/ic_lock_black_24dp"
+        android:title="Privacy Policy" />
+
+    <!--<item
+        android:id="@+id/nav_facebook"
+        android:icon="@drawable/ic_facebook_logo"
+        android:title="Facebook Page" />-->
+
+</menu>

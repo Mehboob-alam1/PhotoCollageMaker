@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:padding="@dimen/_5sdp"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        n1:id="@+id/image_view_collage_icon"
+        n1:layout_width="50.0dip"
+        n1:layout_height="50.0dip"
+        n1:scaleType="fitCenter" />
+</LinearLayout>

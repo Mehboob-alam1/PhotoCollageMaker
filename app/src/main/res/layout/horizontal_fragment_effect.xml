@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="match_parent"
+    n1:layout_height="match_parent">
+
+    <LinearLayout
+        n1:id="@+id/filter_container"
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        n1:gravity="center_horizontal"
+        n1:orientation="vertical">
+
+        <ViewSwitcher
+            n1:id="@+id/viewswitcher"
+            n1:layout_width="match_parent"
+            n1:layout_height="wrap_content">
+
+            <LinearLayout
+                n1:layout_width="match_parent"
+                n1:layout_height="wrap_content"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <com.helloworld.photoeditor.utils.MyViewFlipper
+                    n1:id="@+id/control_container"
+                    n1:layout_width="match_parent"
+                    n1:layout_height="wrap_content"
+                    n1:background="@color/bg"
+                    n1:gravity="bottom">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        n1:id="@+id/filter_RecyclerView"
+                        n1:layout_width="match_parent"
+                        n1:layout_height="@dimen/_55sdp"
+                        n1:layout_gravity="bottom"
+                        n1:scrollbars="horizontal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        n1:id="@+id/border_RecyclerView"
+                        n1:layout_width="match_parent"
+                        n1:layout_height="@dimen/_55sdp"
+                        n1:layout_gravity="bottom"
+                        n1:scrollbars="horizontal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        n1:id="@+id/overlay_RecyclerView"
+                        n1:layout_width="match_parent"
+                        n1:layout_height="@dimen/_55sdp"
+                        n1:layout_gravity="bottom"
+                        n1:scrollbars="horizontal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        n1:id="@+id/texture_RecyclerView"
+                        n1:layout_width="match_parent"
+                        n1:layout_height="@dimen/_55sdp"
+                        n1:layout_gravity="bottom"
+                        n1:scrollbars="horizontal" />
+
+                    <LinearLayout
+                        n1:id="@+id/seekbar_container"
+                        n1:layout_width="match_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_gravity="center"
+                        n1:orientation="vertical">
+
+                        <TextView
+                            n1:id="@+id/seekbar_hint"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:ellipsize="end"
+                            n1:singleLine="true"
+                            n1:textColor="#000000" />
+
+                        <com.helloworld.photoeditor.common_lib.SeekBarHint
+                            n1:id="@+id/seek_bar_adjustment"
+                            style="@style/effect_seek_bar_style"
+                            n1:padding="12.0dip"
+                            n1:progress="50"
+                            n1:progressBackgroundTint="#212121" />
+                    </LinearLayout>
+
+                    <View
+                        n1:id="@+id/lllld_flipper"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="0.0dip" />
+                </com.helloworld.photoeditor.utils.MyViewFlipper>
+
+                <LinearLayout
+                    n1:layout_width="match_parent"
+                    n1:layout_height="wrap_content"
+                    n1:gravity="center_horizontal"
+                    n1:orientation="horizontal">
+
+                    <ImageButton
+                        n1:id="@+id/button_lib_cancel"
+                        style="@style/effect_footer_imagebutton_style"
+                        n1:src="@drawable/ic_cancel"
+                        n1:tint="@color/text_color"/>
+
+                    <Button
+                        n1:id="@+id/lib_current_adjustmen_label"
+                        style="@style/effect_footer_imagebutton_style"
+                        n1:background="@color/app_foreground"
+                        n1:text="FX"
+                        n1:textColor="@color/text_color"
+                        n1:textSize="@dimen/_14sdp" />
+
+                    <ImageButton
+                        n1:id="@+id/button_lib_ok"
+                        style="@style/effect_footer_imagebutton_style"
+                        n1:src="@drawable/ic_checked"
+                        n1:tint="@color/text_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="match_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="bottom"
+                n1:orientation="vertical">
+
+                <RelativeLayout
+                    n1:id="@+id/mini_header"
+                    n1:layout_width="match_parent"
+                    n1:layout_height="wrap_content">
+
+                    <Button
+                        n1:id="@+id/button_filter_reset"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="@dimen/_20sdp"
+                        n1:layout_centerHorizontal="true"
+                        n1:background="@drawable/selector_btn_reset_lib"
+                        n1:gravity="bottom|center"
+                        n1:minWidth="@dimen/_55sdp"
+                        n1:onClick="myClickHandler"
+                        n1:paddingLeft="2.0dip"
+                        n1:paddingRight="2.0dip"
+                        n1:text="Reset"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/_9sdp" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    n1:id="@+id/fx_footer"
+                    n1:layout_width="match_parent"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="bottom"
+                    n1:fillViewport="true"
+                    n1:measureAllChildren="false"
+                    n1:scrollbars="none">
+
+                    <LinearLayout
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:orientation="horizontal">
+
+                        <Button
+                            n1:id="@+id/button_fx"
+                            style="@style/effect_footer_imagebutton_style"
+                            n1:drawableTop="@drawable/ic_magic_wand"
+                            n1:text="Fx"
+                            n1:textColor="@color/text_color"
+                            n1:drawableTint="@color/text_color"/>
+
+                        <Button
+                            n1:id="@+id/button_frame"
+                            style="@style/effect_footer_imagebutton_style"
+                            n1:drawableTop="@drawable/ic_frame"
+                            n1:text="Frame"
+                            n1:textColor="@color/text_color"
+                            n1:drawableTint="@color/text_color"/>
+
+                        <Button
+                            n1:id="@+id/button_light"
+                            style="@style/effect_footer_imagebutton_style"
+                            n1:drawableTop="@drawable/ic_sun"
+                            n1:text="Light"
+                            n1:textColor="@color/text_color"
+                            n1:drawableTint="@color/text_color"/>
+
+                        <Button
+                            n1:id="@+id/button_texture"
+                            style="@style/effect_footer_imagebutton_style"
+                            n1:drawableTop="@drawable/ic_lines"
+                            n1:text="Texture"
+                            n1:textColor="@color/text_color"
+                            n1:drawableTint="@color/text_color"/>
+
+                        <Button
+                            n1:id="@+id/button_blur"
+                            style="@style/effect_footer_imagebutton_style"
+                            n1:drawableTop="@drawable/ic_blur_option"
+                            n1:text="Blur"
+                            n1:textColor="@color/text_color"
+                            n1:drawableTint="@color/text_color"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ViewSwitcher>
+    </LinearLayout>
+</RelativeLayout>

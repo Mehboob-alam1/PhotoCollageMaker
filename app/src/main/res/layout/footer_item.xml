@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:padding="@dimen/_5sdp"
+    n1:layout_width="@dimen/_100sdp"
+    n1:layout_height="@dimen/_100sdp"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        n1:id="@+id/imageView"
+        n1:layout_width="@dimen/_60sdp"
+        n1:layout_height="@dimen/_60sdp"
+        n1:scaleType="centerCrop" />
+
+    <ImageView
+        n1:id="@+id/imageView_delete"
+        n1:padding="@dimen/_5sdp"
+        n1:clickable="true"
+        n1:layout_width="@dimen/_25sdp"
+        n1:layout_height="@dimen/_25sdp"
+        n1:src="@drawable/gallery_delete"
+        n1:scaleType="centerCrop"
+        n1:onClick="myClickHandler" />
+</RelativeLayout>

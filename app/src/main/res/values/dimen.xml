@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_medium">14.0sp</dimen>
+    <dimen name="padding_small">5.0dip</dimen>
+    <dimen name="collage_context_button_style_min_width">50.0dip</dimen>
+    <dimen name="_100sdp">100.0sp</dimen>
+    <dimen name="_14sdp">14.0sp</dimen>
+    <dimen name="_20sdp">20.0sp</dimen>
+    <dimen name="_25sdp">25.0sp</dimen>
+    <dimen name="_40sdp">40.0sp</dimen>
+    <dimen name="_5sdp">5.0sp</dimen>
+    <dimen name="_50sdp">50.0sp</dimen>
+    <dimen name="_60sdp">60.0sp</dimen>
+    <dimen name="_8sdp">10.0sp</dimen>
+    <dimen name="_9sdp">9.0sp</dimen>
+    <dimen name="_55sdp">55.0sp</dimen>
+    <dimen name="_12sdp">12.0sp</dimen>
+    <dimen name="text_size_very_small">10.0sp</dimen>
+    <dimen name="padding_extra_normal">8.0dip</dimen>
+    <dimen name="default_preview_height">40.0dip</dimen>
+    <dimen name="padding_normal">5.0dip</dimen>
+    <dimen name="default_preview_image_height">36.0dip</dimen>
+    <dimen name="preview_text_size">30.0sp</dimen>
+    <dimen name="preview_text_view_height">50.0dip</dimen>
+    <dimen name="edittext_padding">10.0dip</dimen>
+    <dimen name="text_size_small">12.0sp</dimen>
+    <dimen name="gallery_grid_item_selected_item_size">30.0dip</dimen>
+    <dimen name="font_grid_row_height">50.0dip</dimen>
+    <dimen name="margin_normal">10.0dip</dimen>
+    <dimen name="collage_seek_bar_margin">10.0dip</dimen>
+    <dimen name="collage_ratio_text_size">14.0sp</dimen>
+    <dimen name="collage_ratio_button_height">60.0dip</dimen>
+    <dimen name="collage_ratio_button_width">60.0dip</dimen>
+    <dimen name="myFontSize">14.0sp</dimen>
+    <dimen name="lib_thumb_save_size">36.0dip</dimen>
+</resources>

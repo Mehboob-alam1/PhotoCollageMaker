@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/dialog_heading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:text="Are You Sure To Exit?"
+            android:textStyle="bold"
+            android:textColor="#ff212121"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/exit_ad_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+        <ProgressBar
+            android:id="@+id/exit_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/exit_app"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dp"
+            android:layout_weight="100.0"
+            android:background="#ffefefef"
+            android:gravity="center"
+            android:text="OK"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="16.0dp" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/cancel_app"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dp"
+            android:layout_weight="100.0"
+            android:background="#ffefefef"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="16.0dp" />
+
+    </LinearLayout>
+</LinearLayout>

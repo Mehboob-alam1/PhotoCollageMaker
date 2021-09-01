@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <translate n1:duration="@android:integer/config_mediumAnimTime"
+        n1:fromXDelta="0.0"
+        n1:toXDelta="-50.0%p"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <alpha n2:duration="@android:integer/config_mediumAnimTime"
+        n2:fromAlpha="1.0"
+        n2:toAlpha="0.0"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+</set>

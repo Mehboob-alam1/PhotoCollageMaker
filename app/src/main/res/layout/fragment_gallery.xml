@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_gallery_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primary"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:padding="16dp"
+            android:src="@drawable/ic_left_arrow_back" />
+
+        <TextView
+            android:id="@+id/textView_header"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/gallery_select_an_album"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="5.0"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4.0dip"
+            android:background="@drawable/dropshadow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/upshadow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gallery_tool_next"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.6"
+        android:background="@color/app_foreground">
+
+        <TextView
+            android:id="@+id/gallery_delete_all"
+            style="@style/gallery_tool_text_style"
+            android:drawableStart="@drawable/ic_delete_black_24dp"
+            android:drawableLeft="@drawable/ic_delete_black_24dp"
+            android:text="(0)"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/gallery_max"
+            style="@style/gallery_tool_text_style"
+            android:layout_toEndOf="@+id/gallery_delete_all"
+            android:layout_toRightOf="@+id/gallery_delete_all"
+            android:text="@string/gallery_lib_max"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/gallery_next"
+            style="@style/gallery_tool_text_style"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_gallery_ok_button_bg"
+            android:drawableEnd="@drawable/ic_chevron_right_white_24dp"
+            android:drawableRight="@drawable/ic_chevron_right_white_24dp"
+            android:paddingStart="18dp"
+            android:paddingLeft="18dp"
+            android:text="Next"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/gallery_remove_all"
+            style="@style/gallery_tool_text_style"
+            android:background="#ff1ea0d7"
+            android:text="Remove All"
+            android:textColor="#ffffffff"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#ffeeeeee"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/selected_image_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/g_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
